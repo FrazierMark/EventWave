@@ -7,9 +7,9 @@ from django.contrib.auth.forms import UserCreationForm
 import requests
 from .models import User, Event, Profile
 from sorcery import dict_of
-
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 BASE_URL = 'https://api.seatgeek.com/2/events?'
 PER_PAGE = '&per_page=20'
